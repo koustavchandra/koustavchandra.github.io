@@ -8,7 +8,7 @@ subtitle: <i>Research Fellow</i>, <a href='https://igc.psu.edu/'>Center for Comp
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>307 Whitmore Laboratory number</p>
     <p>University Park, PA, 16802, USA</p>
