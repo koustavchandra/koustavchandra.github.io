@@ -52,18 +52,19 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Gravitational Wave Searches
-      items:
-        - Matched-filter based detection of quasi-spherical black hole binaries
-        - Application of convolutional neural networks for gravitational wave detection
-    - title: Black Hole Ringdown Analysis
-      items:
-        - Bayesian inference of merger remnant properties via black hole spectroscopy
-        - Post-merger analysis of binary neutron stars
-    - title: Readiness for <a href="https://cosmicexplorer.org/">Cosmic Explorer</a> and <a href="https://www.et-gw.eu//">Einstein Telescope</a>
-      items:
-        - Understanding and addressing the limitations of current waveform models
-        - Benchmarking detection and inference strategies for next-generation observatories
+    - Modelled searches for quasi-spherical black hole binaries, Measurement of binary remnant properties, Black hole spectroscopy, Machine learning methods for gravitational-wave data analysis
+    # - title: Gravitational Wave Searches
+    #   items:
+    #     - Matched-filter based detection of quasi-spherical black hole binaries
+    #     - Application of convolutional neural networks for gravitational wave detection
+    # - title: Black Hole Ringdown Analysis
+    #   items:
+    #     - Bayesian inference of merger remnant properties via black hole spectroscopy
+    #     - Post-merger analysis of binary neutron stars
+    # - title: Readiness for <a href="https://cosmicexplorer.org/">Cosmic Explorer</a> and <a href="https://www.et-gw.eu//">Einstein Telescope</a>
+    #   items:
+    #     - Understanding and addressing the limitations of current waveform models
+    #     - Benchmarking detection and inference strategies for next-generation observatories
 
 
 - title: Other Adventures
