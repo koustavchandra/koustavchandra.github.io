@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <i>Research Fellow</i>, <a href='https://igc.psu.edu/'>CInstitute for Gravitation and the Cosmos</a>, Penn State
+subtitle: <i>Research Scholar</i>, <a href='https://igc.psu.edu/'>Institute for Gravitation and the Cosmos</a>, Penn State
 
 
 profile:
