@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-That sleep-deprived mess over here just received the Naik and Rastogi Excellence in PhD Thesis Awards 🤪
+That sleep-deprived mess over here just received the Naik and Rastogi Excellence in PhD Thesis Awards 😁
