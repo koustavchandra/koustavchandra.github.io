@@ -3,8 +3,8 @@
   contents:
     - name: Full Name
       value: Koustav Chandra
-    - name: Date of Birth
-      value: 22nd November 1994
+    # - name: Date of Birth
+    #   value: 22nd November 1994
     - name: Languages
       value: English, Bengali, Hindi, Odia
 
