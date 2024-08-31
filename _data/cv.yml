@@ -3,8 +3,8 @@
   contents:
     - name: Full Name
       value: Koustav Chandra
-    # - name: Date of Birth
-      # value: 22nd November 1994
+    - name: Date of Birth
+      value: 22nd November 1994
     - name: Languages
       value: English, Bengali, Hindi, Odia
 
@@ -13,21 +13,21 @@
   contents:
     - title: Postdoc
       institution: Penn State University
-      year: 2023 - Now
+      year: 2023 - Present
 
 - title: Education
   type: time_table
   contents:
     - title: PhD in Physics
       institution: Indian Institute of Technology Bombay
-      year: 2018-2023
+      year: 2018 - 2023
       description:
-        - Hearing gravitational waves from intermediate-mass black hole binaries: Detection and Characterisation
-        - Summa cum laude
+        - Hearing Gravitational Waves from Intermediate-Mass Black Hole Binaries: Detection and Characterisation
+        - Summa Cum Laude
         - Research performed under the supervision of Prof. Archana Pai
     - title: Integrated M.Sc. in Physics and Astronomy
       institution: National Institute of Technology Rourkela
-      year: 2013-2018
+      year: 2013 - 2018
       description:
         - An Algebraic Study of SO(10) Grand Unified Theory
         - Research performed under the supervision of Dr. Sasmita Mishra
@@ -36,38 +36,30 @@
   type: time_table
   contents:
     - title: <a href="https://pycbc.org/">PyCBC</a>
-      year: 2019-now
+      year: 2019 - Present
     - title: <a href="https://koustavchandra.github.io/gwforge/">GWForge</a>
-      year: 2024-now
+      year: 2024 - Present
       description: A lightweight code to generate mock gravitational wave data using user-defined population and arbitrary detector sensitivity.
-
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2024
       items:
-        - Naik and Rastogi Award for Excellence in Ph.D. Research 2022-2024 
+        - Naik and Rastogi Award for Excellence in Ph.D. Research (2022 - 2024)
+    - year: 2018
+      items:
+        - Department Prize for Outstanding Student Performance, National Institute of Technology, Rourkela
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - Modelled searches for quasi-spherical black hole binaries, Measurement of binary remnant properties, Black hole spectroscopy, Machine learning methods for gravitational-wave data analysis
-    # - title: Gravitational Wave Searches
-    #   items:
-    #     - Matched-filter based detection of quasi-spherical black hole binaries
-    #     - Application of convolutional neural networks for gravitational wave detection
-    # - title: Black Hole Ringdown Analysis
-    #   items:
-    #     - Bayesian inference of merger remnant properties via black hole spectroscopy
-    #     - Post-merger analysis of binary neutron stars
-    # - title: Readiness for <a href="https://cosmicexplorer.org/">Cosmic Explorer</a> and <a href="https://www.et-gw.eu//">Einstein Telescope</a>
-    #   items:
-    #     - Understanding and addressing the limitations of current waveform models
-    #     - Benchmarking detection and inference strategies for next-generation observatories
-
+    - Modelled searches for quasi-spherical black hole binaries
+    - Measurement of binary remnant properties
+    - Black hole spectroscopy
+    - Machine learning methods for gravitational-wave data analysis
 
 - title: Other Adventures
   type: list
   contents:
-    - <u>Hobbies:</u> Hiking (more of "Strolling" 🏞️), Bicycling, mastering "Mamamia" in language lessons 🇮🇹, and ofc, binge-watching like it’s an Olympic event 🍿📺.
+    - <u>Hobbies:</u> Hiking (more of "Strolling" 🏞️), Bicycling, mastering "Mamamia" in language lessons 🇮🇹, and binge-watching like it’s an Olympic event 🍿📺.
