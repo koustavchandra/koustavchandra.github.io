@@ -54,10 +54,11 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - Modelled searches for quasi-spherical black hole binaries
-    - Measurement of binary remnant properties
-    - Black hole spectroscopy
-    - Machine learning methods for gravitational-wave data analysis
+    items:
+      - Modelled searches for quasi-spherical black hole binaries
+      - Measurement of binary remnant properties
+      - Black hole spectroscopy
+      - Machine learning methods for gravitational-wave data analysis
 
 - title: Other Adventures
   type: list
