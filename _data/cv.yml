@@ -52,13 +52,12 @@
         - Department Prize for Outstanding Student Performance, National Institute of Technology, Rourkela
 
 - title: Academic Interests
-  type: nested_list
+  type: list
   contents:
-    items:
-      - Modelled searches for quasi-spherical black hole binaries
-      - Measurement of binary remnant properties
-      - Black hole spectroscopy
-      - Machine learning methods for gravitational-wave data analysis
+    - Modelled searches for quasi-spherical black hole binaries
+    - Measurement of binary remnant properties
+    - Black hole spectroscopy
+    - Machine learning methods for gravitational-wave data analysis
 
 - title: Other Adventures
   type: list
