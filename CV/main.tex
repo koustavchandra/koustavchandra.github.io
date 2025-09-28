@@ -1,0 +1,54 @@
+
+\documentclass[letterpaper,10pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false, defernumbers=true,backend=biber]{biblatex}
+\bibliography{main}
+% Load both bibliography files
+
+\defbibfilter{shortauthor}{keyword=shortauthor}
+\defbibfilter{collaboration}{keyword=collaboration}
+
+% Define filters by source
+
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue, Blue
+\def\theme{RedViolet}
+
+\usepackage{simplecv}
+
+% \boldname{Chandra}{Koustav}
+
+\begin{document}
+
+% Heading
+\headinginline{Koustav Chandra}{
+    \faEnvelope: \email{kbc5795@psu.edu} \\
+    \faGlobe: \website{https://koustavchandra.github.io/} \\
+    % \faLinkedin: \linkedin{doruk-cetin} 
+    \faGithub: \github{koustavchandra}
+}
+
+% \headingphoto{Doruk Çetin}{
+%     Website: \website{dcetin.me} \\ 
+%     Email: \email{dcetin@ethz.ch} \\
+%     % LinkedIn: \linkedin{doruk-cetin} \\
+%     GitHub: \github{dcetin}
+% }{photo.png}
+
+% Page One
+\import{sections/}{education.tex}
+\import{sections/}{experience.tex}
+\import{sections/}{volunteering.tex}
+% \pagebreak
+
+% Page Two
+\import{sections/}{teaching.tex}
+% \sidebyside
+%     {\import{sections/}{skills.tex}}
+%     {\import{sections/}{languages.tex}}
+\import{sections/}{awards.tex}
+\import{sections/}{reference.tex}
+\import{sections/}{publications.tex}
+
+\end{document}
