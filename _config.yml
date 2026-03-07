@@ -1,12 +1,11 @@
 # Site settings
 title: Koustav 
 subtitle: Chandra
-email: kbc5795.psu.edu
+email: kbc5795@psu.edu
 description: Junior Scientist/Postdoc 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://koustavchandra.github.io"
 baseurl: ""   # must be empty for user site
-author:
+url: "https://koustavchandra.github.io"
+author: Koustav Chandra
 street_address: Max Planck Institute for Gravitational Physics (Albert Einstein Institute)
 city: Potsdam
 state: Brandenburg
@@ -21,6 +20,9 @@ country: Germany
 # 500px_url:
 # facebook_url:
 github_url: https://github.com/koustavchandra
+# google_scholar_url: https://scholar.google.com/citations?user=YOURID
+# orcid_url: https://orcid.org/YOUR-ORCID
+# inspire_url: https://inspirehep.net/authors/YOURID
 # gitlab_url: https://gitlab.com/u/andrewbanchich
 # googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
 # instagram_url: https://instagram.com
