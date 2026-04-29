@@ -1,6 +1,12 @@
+
+\defbibnote{collabnote}{\textcolor{violet}{Selected papers to which I made substantial contributions.}}
 \nocite{*}
 \addcontentsline{toc}{section}{Short Author Publications}
 \printbibliography[title={Short Author Publications},filter=shortauthor, resetnumbers=true]
-$\textcolor{violet}{\dagger}$ Papers co-authored with my PhD supervisor.
-\addcontentsline{toc}{section}{Selected Collaboration-Authored Publications}
-\printbibliography[title={Selected Collaboration-Authored Publications},filter=collaboration, resetnumbers=true]
+$\textcolor{cyan}{\circledast}$ Papers co-authored with my PhD supervisor.
+\addcontentsline{toc}{section}{Selected Collaboration Publications}
+\printbibliography[
+  title={Selected Collaboration Publications},
+  filter=collaboration,
+  prenote=collabnote,
+  resetnumbers=true]
