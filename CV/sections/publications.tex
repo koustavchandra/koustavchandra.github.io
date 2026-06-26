@@ -1,12 +1,28 @@
 
-\defbibnote{collabnote}{\textcolor{violet}{Selected papers to which I made substantial contributions.}}
+% \defbibnote{collabnote}{%
+%   \textbf{Note:} Papers below are a curated selection of LVK collaboration papers to which I made \textbf{substantial scientific contributions}
+%   (analysis leads, key results, or primary authors).
+%   For the complete list of publications ($\sim$130 papers, $\sim$4000 citations),
+%   see my \href{https://inspirehep.net/authors/1817603?ui-citation-summary=true&ui-exclude-self-citations=true}{\textcolor{RedViolet}{InspireHEP profile}}.%
+% }
+
 \nocite{*}
-\addcontentsline{toc}{section}{Short Author Publications}
-\printbibliography[title={Short Author Publications},filter=shortauthor, resetnumbers=true]
-$\textcolor{cyan}{\circledast}$ Papers co-authored with my PhD supervisor.
-\addcontentsline{toc}{section}{Selected Collaboration Publications}
+
+\section{Selected Publications}
+
+\noindent\small{For full list see:
+\href{https://inspirehep.net/authors/1817603?ui-citation-summary=true&ui-exclude-self-citations=true}{\textcolor{RedViolet}{inspirehep.net/authors/1817603}}. \quad $\textcolor{SeaGreen}{\circledast}:=$ papers co-authored with PhD supervisor}
+
+\vspace{2pt}
+
+\addcontentsline{toc}{section}{}
+\printbibliography[title={Short-Author Publications},filter=shortauthor, 
+resetnumbers=true, 
+heading=subbibliography]
+
+\addcontentsline{toc}{section}{}
 \printbibliography[
-  title={Selected Collaboration Publications},
+  title={LVK Collaboration Publications with Significant Contributions},
   filter=collaboration,
-  prenote=collabnote,
-  resetnumbers=true]
+  resetnumbers=true,
+  heading=subbibliography]
