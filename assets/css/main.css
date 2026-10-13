@@ -4083,3 +4083,8 @@
 			margin: 0 0 2em 3em;
 		}
 	}
+
+	.posts .papers {
+		font-size: 0.85em;
+		line-height: 1.7;
+	}
