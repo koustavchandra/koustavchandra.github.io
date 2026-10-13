@@ -1,33 +1,8 @@
-# Site settings
-title: Koustav 
-subtitle: Chandra
-email: koustav.chandra@aei.mpg.de
-description: Junior Scientist/Postdoc 
-baseurl: "" # the subpath of your site, e.g. /blog
+title: Koustav Chandra
+description: Postdoctoral researcher in gravitational-wave astrophysics at the Max Planck Institute for Gravitational Physics (AEI), Potsdam
 url: "https://koustavchandra.github.io"
-baseurl: ""   # must be empty for user site
-author:
-street_address: Max Planck Institute for Gravitational Physics (Albert Einstein Institute)
-city: Potsdam
-state: Brandenburg
-zip_code: 14476
-country: Germany
-# state: TN
-# zip_code: 55555
-# country: United States of America
-# phone: (716) 555-5555
-
-# Social settings
-# 500px_url:
-# facebook_url:
+baseurl: ""
+email: koustav.chandra@aei.mpg.de
 github_url: https://github.com/koustavchandra
-# gitlab_url: https://gitlab.com/u/andrewbanchich
-# googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-# instagram_url: https://instagram.com
-# linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-# pinterest_url:
-# slack_url:
-# twitter_url: https://twitter.com/andrewbanchich
-
-# Build settings
 markdown: kramdown
+exclude: [CV, figures, README.md, LICENSE.md]

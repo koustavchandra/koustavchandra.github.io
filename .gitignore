@@ -19,7 +19,6 @@ Gemfile.lock
 *.out
 *.log
 MANIFEST
-*.png
 
 # Mac OSX
 .DS_Store
