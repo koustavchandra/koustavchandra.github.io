@@ -59,7 +59,7 @@ layout: default
     <li><strong>gwforge: a user-friendly package to generate gravitational-wave mock data</strong><br />
       <strong>K. Chandra</strong> · Class. Quantum Grav. (2025) · <a href="https://doi.org/10.1088/1361-6382/ad9b68" target="_blank" rel="noopener">doi</a></li>
   </ul>
-  <p>Full list on <a href="https://inspirehep.net/authors/1817603" target="_blank" rel="noopener">INSPIRE</a> and in my <a href="{{ 'assets/pdf/CV.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>.</p>
+  <p>Full list on <a href="https://inspirehep.net/authors/1817603" target="_blank" rel="noopener">INSPIRE</a>.</p>
 </section>
 
 <!-- News -->

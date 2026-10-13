@@ -85,32 +85,47 @@ def source_frame():
     ax = f.add_subplot(111, projection="3d", proj_type="ortho")
     ax.set_facecolor("none")
     ax.set_axis_off()
-    th = np.linspace(0, 2 * np.pi, 300)
-    ax.plot(np.cos(th), np.sin(th), 0, color=FG, lw=0.9, alpha=0.5)
+    ax.computed_zorder = False  # honour the zorders below
     ax.plot_surface(*np.meshgrid(np.linspace(-1.3, 1.3, 2), np.linspace(-1.3, 1.3, 2)), np.zeros((2, 2)),
-                    color=BLUE, alpha=0.08, linewidth=0)
-    for x, y, r in ((0.75, 0, 0.16), (-0.5, 0, 0.11)):
-        ax.scatter([x], [y], [0], s=r * 9000, color="#111318", edgecolors=FG, linewidths=1.2, zorder=5)
-    q = dict(arrow_length_ratio=0.12, lw=2)
-    ax.quiver(0, 0, 0, 0, 0, 1.3, color=BLUE, **q)
-    ax.text(0.05, 0.05, 1.38, r"$\hat{L}$", color=BLUE, fontsize=14)
-    N = np.array([0.95, 0.55, 0.9]) / np.linalg.norm([0.95, 0.55, 0.9]) * 1.5
-    ax.quiver(0, 0, 0, *N, color=FG, **q)
-    ax.text(*(N * 1.08), r"$\hat{N}$", color=FG, fontsize=14)
-    K = np.array([-1.0, 0.7, 0.55]) / np.linalg.norm([-1.0, 0.7, 0.55]) * 1.2
-    ax.quiver(0, 0, 0, *K, color=ORANGE, **q)
-    ax.text(*(K * 1.1), r"$\vec{K}$", color=ORANGE, fontsize=14)
-    # inclination arc between L and N
-    s = np.linspace(0, 1, 40)
-    Lh = np.array([0, 0, 1])
-    arc = np.array([np.sin((1 - u) * 0.9) * Lh + np.sin(u * 0.9) * N / 1.5 for u in s]) / np.sin(0.9) * 0.55
-    ax.plot(*arc.T, color=FG, lw=1, alpha=0.8)
-    ax.text(0.22, 0.1, 0.62, r"$\iota$", color=FG, fontsize=13)
-    arcK = np.array([np.sin((1 - u) * 1.1) * Lh + np.sin(u * 1.1) * K / 1.2 for u in s]) / np.sin(1.1) * 0.45
-    ax.plot(*arcK.T, color=ORANGE, lw=1, alpha=0.8)
-    ax.text(-0.42, 0.42, 0.42, r"$\theta_K$", color=ORANGE, fontsize=13)
-    ax.plot([0, N[0] * 1.1], [0, N[1] * 1.1], [0, 0], color=FG, lw=0.8, ls=":", alpha=0.6)
-    ax.plot([N[0], N[0]], [N[1], N[1]], [0, N[2]], color=FG, lw=0.8, ls=":", alpha=0.6)
+                    color=BLUE, alpha=0.08, linewidth=0, zorder=1)
+    # two bodies on circular orbits about the centre of mass: m1 r1 = m2 r2
+    th = np.linspace(0, 2 * np.pi, 300)
+    q = 1.6                      # mass ratio m1/m2
+    r2 = 1.1
+    r1 = r2 / q
+    phi = np.deg2rad(165)        # orbital phase of the heavier body (chosen so neither body crosses an arrow)
+    for r in (r1, r2):
+        ax.plot(r * np.cos(th), r * np.sin(th), 0, color=FG, lw=1.1, alpha=0.85, zorder=2)
+    for r, ang, m in ((r1, phi, q), (r2, phi + np.pi, 1.0)):
+        ax.scatter([r * np.cos(ang)], [r * np.sin(ang)], [0], s=800 * m ** (2 / 3),
+                   color="#111318", edgecolors=FG, linewidths=1.2, zorder=5)
+    ax.scatter([0], [0], [0], s=12, color=FG, zorder=5)  # centre of mass
+    qv = dict(arrow_length_ratio=0.12, lw=2, zorder=6)
+    Lh = np.array([0.0, 0.0, 1.0])
+    ax.quiver(0, 0, 0, 0, 0, 1.3, color=BLUE, **qv)
+    ax.text(0.05, 0.05, 1.38, r"$\hat{L}$", color=BLUE, fontsize=14, zorder=7)
+    Nh = np.array([0.95, 0.55, 0.9]); Nh /= np.linalg.norm(Nh)
+    ax.quiver(0, 0, 0, *(Nh * 1.5), color=FG, **qv)
+    ax.text(*(Nh * 1.62), r"$\hat{N}$", color=FG, fontsize=14, zorder=7)
+    Kh = np.array([-1.0, 0.7, 0.55]); Kh /= np.linalg.norm(Kh)
+    ax.quiver(0, 0, 0, *(Kh * 1.2), color=ORANGE, **qv)
+    ax.text(*(Kh * 1.32), r"$\vec{K}$", color=ORANGE, fontsize=14, zorder=7)
+
+    def arc(a, b, r):
+        """Great-circle arc of radius r between unit vectors a and b."""
+        w = np.arccos(np.clip(a @ b, -1, 1))
+        u = np.linspace(0, 1, 40)[:, None]
+        return r * (np.sin((1 - u) * w) * a + np.sin(u * w) * b) / np.sin(w)
+
+    for other, r, lab, col in ((Nh, 0.55, r"$\iota$", FG), (Kh, 0.45, r"$\theta_K$", ORANGE)):
+        pts = arc(Lh, other, r)
+        ax.plot(*pts.T, color=col, lw=1, alpha=0.8, zorder=6)
+        mid = pts[len(pts) // 2] / r
+        ax.text(*(mid * (r + 0.22)), lab, color=col, fontsize=15, ha="center", va="center", zorder=7)
+    # projection of N onto the orbital plane
+    Np = Nh * 1.5
+    ax.plot([0, Np[0]], [0, Np[1]], [0, 0], color=FG, lw=0.8, ls=":", alpha=0.6, zorder=3)
+    ax.plot([Np[0], Np[0]], [Np[1], Np[1]], [0, Np[2]], color=FG, lw=0.8, ls=":", alpha=0.6, zorder=3)
     ax.set_xlim(-1.2, 1.2); ax.set_ylim(-1.2, 1.2); ax.set_zlim(-0.3, 1.5)
     ax.set_box_aspect((1.6, 1.6, 1.2))
     ax.view_init(elev=24, azim=-62)
