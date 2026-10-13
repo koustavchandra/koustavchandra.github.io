@@ -19,13 +19,13 @@ layout: default
       <span class="image"><img src="{{ 'assets/images/research/ringdown.png' | relative_url }}" alt="Toy inspiral-merger-ringdown waveform with the ringdown highlighted" /></span>
       <h3>Ringdown modelling</h3>
       <p>Modelling the post-merger signal of binary black holes: calibrating analytic ringdown templates for effective-one-body waveforms against numerical relativity, and black hole spectroscopy.</p>
-      <p class="papers"><strong>Papers:</strong> <a href="https://arxiv.org/abs/2509.17315" target="_blank" rel="noopener">Inspiral-merger informed ringdown templates</a> · <a href="https://arxiv.org/abs/2411.11989" target="_blank" rel="noopener">High-resolution gr-athena++ waveforms</a></p>
+      <p class="papers"><strong>Papers:</strong> <a href="https://arxiv.org/abs/2509.17315" target="_blank" rel="noopener">Inspiral-merger informed ringdown templates</a></p>
     </article>
     <article>
       <span class="image"><img src="{{ 'assets/images/research/tgr.png' | relative_url }}" alt="Posterior on fractional deviations of the remnant mass and spin from General Relativity for GW250114" /></span>
       <h3>Tests of General Relativity</h3>
       <p>Parameterised tests of gravity in the strong-field regime and hierarchical tests of GR.</p>
-      <p class="papers"><strong>Papers:</strong> <a href="https://arxiv.org/abs/2607.07070" target="_blank" rel="noopener">GWTC-4.0 mixture-model tests</a> · <a href="https://arxiv.org/abs/2512.04593" target="_blank" rel="noopener">GW250114 multipronged analysis</a> · <a href="https://arxiv.org/abs/2511.19593" target="_blank" rel="noopener">Theory-agnostic parametrised model</a> · <a href="https://arxiv.org/abs/2607.19293" target="_blank" rel="noopener">GWTC-5.0 tests of GR</a></p>
+      <p class="papers"><strong>Papers:</strong> <a href="https://arxiv.org/abs/2607.07070" target="_blank" rel="noopener">GWTC-4.0 mixture-model tests</a> · <a href="https://arxiv.org/abs/2512.04593" target="_blank" rel="noopener">GW250114 multipronged analysis</a> · <a href="https://arxiv.org/abs/2511.19593" target="_blank" rel="noopener">Theory-agnostic parametrised model</a></p>
     </article>
     <article>
       <span class="image"><img src="{{ 'assets/images/research/xg.png' | relative_url }}" alt="Gravitational-wave strain from one event in 2015 to the continuous signal expected with next-generation detectors" /></span>
@@ -52,8 +52,8 @@ layout: default
       <strong>K. Chandra</strong>, R. Gamba, D. Chiaramello · 2025 · <a href="https://arxiv.org/abs/2512.04593" target="_blank" rel="noopener">arXiv:2512.04593</a></li>
     <li><strong>A complete measurement of a black-hole recoil through higher-order gravitational-wave modes</strong><br />
       J. Calderón Bustillo, S. H. W. Leong, <strong>K. Chandra</strong> · Nature Astronomy (2025) · <a href="https://doi.org/10.1038/s41550-025-02632-5" target="_blank" rel="noopener">doi</a></li>
-    <li><strong>GW230814: investigation of a loud gravitational-wave signal observed with a single detector</strong><br />
-      LIGO–Virgo–KAGRA Collaboration · 2025 · <a href="https://arxiv.org/abs/2509.07348" target="_blank" rel="noopener">arXiv:2509.07348</a></li>
+    <li><strong>GW231123: a binary black hole merger with total mass 190–265 M<sub>⊙</sub></strong><br />
+      LIGO–Virgo–KAGRA Collaboration · Astrophys. J. Lett. (2025) · <a href="https://arxiv.org/abs/2507.08219" target="_blank" rel="noopener">arXiv:2507.08219</a></li>
     <li><strong>First gravitational-wave search for intermediate-mass black hole mergers with higher-order harmonics</strong><br />
       <strong>K. Chandra</strong>, J. Calderón Bustillo, A. Pai, I. W. Harry · Phys. Rev. D 106, 123003 (2022) · <a href="https://doi.org/10.1103/PhysRevD.106.123003" target="_blank" rel="noopener">doi</a></li>
     <li><strong>gwforge: a user-friendly package to generate gravitational-wave mock data</strong><br />
